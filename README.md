@@ -1,5 +1,7 @@
 # CloudCompare MacOS
-[CloudCompare](https://github.com/CloudCompare/CloudCompare) MacOS prebuilt with extended plugins. The ideas are based on the blog post of [Ryan Baumann ](https://ryanfb.github.io/etc/2018/04/19/building_cloudcompare_with_e57_support_on_os_x.html).
+[CloudCompare](https://github.com/CloudCompare/CloudCompare) MacOS prebuilt* with extended plugins. The ideas are based on the blog post of [Ryan Baumann ](https://ryanfb.github.io/etc/2018/04/19/building_cloudcompare_with_e57_support_on_os_x.html).
+
+\* **At the moment there are not prebuilt binaries, because the build process is realtive to your filepath. I am still working on it!**
 
 ## Buildscript
 
@@ -37,7 +39,7 @@ Download sources from the cloud compare repository. If a newer version breaks th
 git clone --recursive https://github.com/cloudcompare/trunk.git cloudcompare
 ```
 
-### Configure
+### Configure
 To configure and build, first create the output folder:
 
 ```bash
@@ -71,6 +73,8 @@ Press following keys to configure and generate (sometimes `e` to skip warnings!)
 ```
 c -> c -> g
 ```
+
+### Build
 
 Then run `make` and the software should be built into `qCC`:
 
